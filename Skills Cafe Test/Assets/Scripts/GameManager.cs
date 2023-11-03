@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
         if(m_currentCard != null)
         {
             bucket.SetNotification();
+            AudioController.Instance.PlayCardSound();
             if (m_currentCard.GetActionType() == bucketAction)
             {
                 totalScore += correctActionScore;                
